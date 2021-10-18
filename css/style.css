@@ -31,14 +31,6 @@
     font-display: swap;
 }
 
-body{
-    font-family: 'sf-pro-display';
-    font-style: 16px;
-    line-height: 19px;
-    font-weight: 400;
-    color: #fff;
-}
-
 a{
     color: inherit;
     text-decoration: none;
@@ -49,6 +41,15 @@ button{
     background-color: transparent;
     cursor: pointer;
     color: inherit;
+    font-family: 'sf-pro-display';
+}
+
+body{
+    font-family: 'sf-pro-display';
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    color: #fff;
 }
 
 .container{
@@ -57,6 +58,10 @@ button{
     margin-right: auto;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.title{
+    font-family: 'sf-pro-display';
 }
 
 .header {
@@ -91,7 +96,7 @@ button{
 
 .menu__link{
     text-transform: uppercase;
-    font-style: 18px;
+    font-size: 18px;
     line-height: 21px;
     transition: color .5s;
 }
@@ -101,7 +106,7 @@ button{
 }
 
 .phone{
-    font-style: 24px;
+    font-size: 24px;
     line-height: 29px;
     margin-left: auto;
 }
@@ -160,4 +165,8 @@ button{
 }
 .header__description-text + .header__description-text{
     margin-left: 52px;
+}
+
+.about{
+    background-image: url(../images/about-bg.jpg);
 }
