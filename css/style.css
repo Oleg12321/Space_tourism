@@ -61,7 +61,19 @@ body{
 }
 
 .title{
-    font-family: 'sf-pro-display';
+    font-family: 'spaceagecyrillic';
+    padding: 100px 0;
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 400;
+}
+
+.button{
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 20px 45px;
 }
 
 .header {
@@ -168,5 +180,219 @@ body{
 }
 
 .about{
-    background-image: url(../images/about-bg.jpg);
+    background-image: url(../images/aboute-bg1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.aboute__item{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 150px;
+}
+
+.aboute__item:nth-child(odd){
+    flex-direction: row-reverse;
+}
+
+.aboute__img{
+    max-width: 100%;
+}
+
+.aboute__content{
+    width: 600px;
+}
+
+.aboute__content-title{
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.aboute__content-subtitle{
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    color: #036CCA;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.aboute__content-text{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.aboute__content-text p{
+    width: 160px;
+}
+
+.aboute__table{
+    margin-bottom: 50px;
+}
+
+.aboute__table-caption{
+    caption-side: bottom;
+    text-align: left;
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.aboute__table-tr{
+    border: 1px solid #fff;
+    border-left: none;
+    border-right: none;
+}
+
+.aboute__table-tr + .aboute__table-tr{
+    font-size: 36px;
+    line-height: 43px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.aboute__table-td{
+    padding: 10px 30px 10px 0;
+}
+
+.aboute__table-td span{
+    font-size: 14px;
+    line-height: 17px;
+    display: block;
+}
+
+.how-to{
+    background-image: url(../images/howto-bg.jpg);
+    background-repeat: no-repeat;
+    background-position:  top center;
+    background-size: cover;
+    padding-bottom: 100px;
+}
+
+.how-to__box{
+    text-align: center;
+}
+
+.how-to__box  ellipse,
+.how-to__box  text,
+foreignObject{
+    transition: all .5s;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.how-to__box g:hover ellipse{
+    r: 20px;
+    fill: #036CCA;
+}
+
+.how-to__box g:hover text{
+    fill: #036CCA;
+    font-size: 22px;
+}
+
+.how-to__box g:hover foreignObject{
+    color: #036CCA;
+    font-size: 22px;
+}
+
+foreignObject{
+    text-align: left;
+}
+
+.to-book{
+    background-image: url(../images/tobook-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.to-book__inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.to-book__text{
+    width: 165px;
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: 52px;
+}
+.to-book__text + .to-book__text{
+    margin-right: 0;
+    margin-left: 0;
+}
+.info{
+    background-image: url(../images/info-bg.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 100px;
+}
+
+.special-offer__inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.special-offer__item{
+    width: 500px;
+}
+
+.special-offer__item-box{
+    min-height: 400px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    border: 1px solid #fff;
+    padding: 40px 75px;
+    text-align: center;
+}
+
+.special-offer__item-text{
+    font-size: 24px;
+    line-height: 29px;
+    width: 236px;
+    margin: 0 auto;
+}
+
+.special-offer__item-text span{
+    color: #CB0E0E;
+}
+
+.special-offer__old-price{
+    text-align: right;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.special-offer__old-price::before{
+    content: '';
+    position: absolute;
+    width: 68px;
+    height: 1px;
+    background-color: #CB0E0E;
+    top: 7px;
+    right: 0;
+    transform: rotate(15deg);
+}
+
+.special-offer__new-price{
+    font-size: 48px;
+    line-height: 57px;
+}
+
+.special-offer__btn{
+    width: 100%;
 }
